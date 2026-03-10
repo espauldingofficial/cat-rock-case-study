@@ -1,0 +1,166 @@
+/* ─── Global ─── */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Times New Roman", Times, serif;
+    background-color: #f4f4f0;
+    color: #1a1a1a;
+  }
+  
+  /* ─── App container ─── */
+  .app {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* ─── Header ─── */
+  .app h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+    color: #111;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  
+  .subtitle {
+    font-size: 0.85rem;
+    color: #777;
+    margin-bottom: 2rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  
+  /* ─── Search bar ─── */
+  .search-bar {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 2.5rem;
+    justify-content: center;
+  }
+  
+  .search-bar input {
+    padding: 0.55rem 1rem;
+    font-size: 0.95rem;
+    font-family: "Times New Roman", Times, serif;
+    border: 1px solid #bbb;
+    border-radius: 0;
+    width: 200px;
+    outline: none;
+    background-color: #fff;
+    transition: border-color 0.2s;
+    letter-spacing: 0.03em;
+  }
+  
+  .search-bar input:focus {
+    border-color: #333;
+  }
+  
+  .search-bar button {
+    padding: 0.55rem 1.4rem;
+    font-size: 0.95rem;
+    font-family: "Times New Roman", Times, serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: background-color 0.2s;
+  }
+  
+  .search-bar button:hover {
+    background-color: #444;
+  }
+  
+  /* ─── Error message ─── */
+  .error {
+    color: #990000;
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+    font-style: italic;
+  }
+  
+  /* ─── Dashboard layout ─── */
+  .dashboard {
+    display: flex;
+    gap: 1.5rem;
+    width: 100%;
+    justify-content: center;
+    overflow-x: auto;
+  }
+  
+  /* ─── Individual table panel ─── */
+  .table-panel {
+    flex: 1;
+    min-width: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 1.2rem 1.2rem 1.5rem;
+  }
+  
+  .table-panel h2 {
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid #ccc;
+    color: #444;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  
+  /* ─── Table ─── */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 0.74rem;  
+  }
+  
+  thead th {
+    padding: 6px 7px;
+    text-align: right;
+    font-weight: 600;
+    white-space: nowrap;
+    color: #333;
+    letter-spacing: 0.02em;  
+    text-transform: uppercase;
+    font-size: 0.68rem;
+  }
+  
+  thead th:first-child {
+    text-align: left;
+  }
+  
+  tbody td {
+    padding: 6px 7px;  
+    text-align: right;
+    white-space: nowrap;
+    font-size: 0.74rem;
+  }
+  
+  /* ─── Growth colors ─── */
+  .positive {
+    color: #1a6e35;
+  }
+  
+  .negative {
+    color: #991a00;
+  }
+  
+  /* ─── Divider between header and content ─── */
+  .divider {
+    width: 40px;
+    height: 2px;
+    background-color: #1a1a1a;
+    margin: 0.6rem auto 2rem;
+  }
